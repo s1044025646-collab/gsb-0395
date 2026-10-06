@@ -1,0 +1,20 @@
+{
+  "name": "kendall-adjacent-swap-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "全排列 Kendall 逆序距离与最短相邻交换见证后端",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "demo": "npm run build && node dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
